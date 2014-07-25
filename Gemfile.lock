@@ -1,9 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    chunky_png (1.3.1)
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
+    redis (3.1.0)
+    rqrcode (0.4.2)
+    rqrcode_png (0.1.2)
+      chunky_png
+      rqrcode
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -14,4 +20,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  chunky_png
+  redis
+  rqrcode_png
   sinatra

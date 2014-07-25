@@ -1,3 +1,7 @@
 source "https://rubygems.org"
 
-gem "sinatra"
+ruby '2.1.2'
+gem 'chunky_png'
+gem 'redis'
+gem 'rqrcode_png'
+gem 'sinatra'

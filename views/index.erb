@@ -1,0 +1,41 @@
+<img src="http://placebacon.net/400/300" alt="Chunky bacon." class="img-circle center-block" width="30%" height="30%">
+<h2 class="text-center">Yo Dawg! I heard you like QR codez!</h2>
+<h3 class="text-center">Let me put a QR Code in yo QR code so ya can scan while ya scan!</h3>
+<br/></br/>
+<form class="form-horizontal well" action="/qr_codes" " method="post">
+    <fieldset>
+        <legend>Simply fill out this form!</legend>
+        <!-- <div class="form-group">
+            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="input_email" name="input_email" placeholder="Email">
+                <span class="help-block">We'll mail your first QR code to this address.</span>
+            </div>
+        </div> -->
+        <div class="form-group">
+            <label for="inputURL" class="col-lg-2 control-label">URL</label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="input_url" name="input_url" placeholder="URL">
+                <span class="help-block">Enter an URL to which the chain of QR codes should (transitively) refer.</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="select" class="col-lg-2 control-label"># of QR Codes</label>
+            <div class="col-lg-10">
+                <select class="form-control" id="select" name="qr_quantity">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <span class="help-block">Select the number of QR codes a user must scan to visit your URL.</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
